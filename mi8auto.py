@@ -2,7 +2,7 @@ import os
 import re
 import time
 import datetime
-debug = "Phone"
+debug = False
 print("""心情复杂自动刷经验 For MI 8 device v3.1.2
 v2.0更新:新增网页访问功能
 v2.1更新:在网页中添加最新手机截图,避免反复scrcpy排查问题
