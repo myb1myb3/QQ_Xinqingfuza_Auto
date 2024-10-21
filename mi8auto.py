@@ -3,6 +3,7 @@ import re
 import time
 import datetime
 debug = False
+#更改所有tap函数以使其适应你的设备
 print("""心情复杂自动刷经验 For MI 8 device v3.1.2
 v2.0更新:新增网页访问功能
 v2.1更新:在网页中添加最新手机截图,避免反复scrcpy排查问题
@@ -104,11 +105,11 @@ def signin():
     userswitch(0)
     openchat()
 def twoget():
-    send(0,"发起双修268426")
+    send(0,"发起双修")#输入你一个账户的ID
     time.sleep(1)
     userswitch(10)
     openchat()
-    send(0,"接受双修283764")
+    send(0,"接受双修")#输入你另一个账户的ID
     time.sleep(1)
     userswitch(0)
     openchat()
